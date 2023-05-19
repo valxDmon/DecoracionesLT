@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{titulo}}</title>
+    <link rel="stylesheet" href="../css/valid.css" />
+    <link rel="stylesheet" href="../css/css.css" />
+  </head>
+  <body>
+
+    <h1>{{titulo}}</h1>
+    <h1>Crear Usuario</h1>
+    <br />
+    <form id="msform">
+
+      <fieldset>
+        <select>
+          <option value="nombre">Nombres</option>
+          <option value="apellido">Apellidos</option>
+          <option value="correo">Correo</option>
+          <option value="fechacreacion">Fecha de Creación</option>
+          <option value="estado">Estado</option>
+        </select>
+        <input
+          type="text"
+          id="nombre"
+          placeholder="Digite Sus Nombres"
+        />
+        <input
+          type="text"
+          id="apellido"
+          placeholder="Digite Sus Apellido"
+        />
+        <input
+          type="text"
+          id="correo"
+          placeholder="Digite Su Correo"
+        />
+        <input
+          type="text"
+          id="fechadecreacion"
+          placeholder="Digite Su Fecha"
+        />
+        <input
+          type="text"
+          id="estado"
+          placeholder="Digite Su Estado"
+        />
+        <!-- <input type="text" name="cpass" placeholder="Estado " /> -->
+        <button class="next action-button"><a href="/usuarios">Regresar</a>
+        </button>
+        <button
+          id="btn"
+          type="submit"
+          name="next"
+          class="next action-button"
+        >Enviar</button>
+      </fieldset>
+    </form>
+    <script src="../js/validacionUsuario.js"></script>
+  </body>
+</html>
